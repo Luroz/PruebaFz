@@ -1,25 +1,26 @@
-# README #
+## Available Scripts
 
-This README would normally document whatever steps are necessary to get your application up and running.
+In the project directory, you can run:
 
-### What is this repository for? ###
+### `npm start`
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### How do I get set up? ###
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### `npm test`
 
-### Contribution guidelines ###
+Launches the test runner in the interactive watch mode.\
 
-* Writing tests
-* Code reviews
-* Other guidelines
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+### `npm run eject`
 
