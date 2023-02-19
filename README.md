@@ -53,5 +53,5 @@ Your app is ready to be deployed!
   Redux es una libreria de terceros, la cual nos provee una cantidad de soluciones para el manejo de estado global en los proyectos desarrollados en react, la cual maneja un modelo de data basado en View-Actions-State la cual nos permite crear una estructura de codigo mas declarativa, asi como tambien nos permite tomar accion antes el problema de mutabilidad y esta se volvio una necesidad antes de la implementacion de un relativamente nuevo hook llamado useContext() con el cual tambien se puede manejar un estado global con menos restricciones que redux.
 
 5. ¿Para qué sirven las ‘Arrow function’ en react?
-
+.
 Esta se utilizan para la creacion de componentes puros, con los cuales luego de la implementacion de la version 18 de react podemos utilizar hooks, con estos podemos crear componentes puramente funcionales los cuales pueden manejar estar local y recibir props sin la necesidad de una clase. Estas tambien nos permiten un mejor manejo del scope lo cual separa cada variable y funcion del estado global, lo que solia generar problemas logicos en la app debido al hoisting y la declaracion de variables repetidas. 

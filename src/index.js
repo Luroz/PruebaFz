@@ -2,9 +2,13 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './js/styles/styles'
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import { CounterView } from './js/views/CounterView';
 import { counters } from './js/reducers/index';
+
+import "./index.sass"
 
 
 
@@ -26,7 +30,9 @@ const App = () => (
   <>
     <Provider store={store}>
       <BrowserRouter>
-        <Main />
+        <ThemeProvider theme={theme}>
+          <Main />
+        </ThemeProvider>
       </BrowserRouter>
     </Provider>
   </>

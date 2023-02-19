@@ -1,16 +1,14 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 const Counter = ({ value, onIncrement, onDecrement }) => (
   <div>
-    <span>{value}</span>
-    <button
-      onClick={() => onIncrement()}>
-      +
-    </button>
-    <button
-      onClick={() => onDecrement()}>
-      -
-    </button>
+    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <Button color='secondary' onClick={() => onDecrement()}>-</Button>
+      <Button disabled><span>{value}</span></Button>
+      <Button onClick={() => onIncrement()}>+</Button>
+    </ButtonGroup>
   </div>
 )
 

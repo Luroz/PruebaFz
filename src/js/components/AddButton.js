@@ -8,6 +8,7 @@ import AddIcon from '@mui/icons-material/Add';
 const AddButton = ({ dispatch }) => (
   <Box sx={{ '& > :not(style)': { m: 1 } }}>
     <Fab
+      color='neutral'
       onClick={() => {
         dispatch(add_counter());
       }}>

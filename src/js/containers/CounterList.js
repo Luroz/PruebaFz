@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { increment, decrement } from '../actions/counters';
 import Counter from '../components/Counter';
+import Box from '@mui/material/Box';
 
 const CounterList = ({
   counters,
@@ -10,12 +11,14 @@ const CounterList = ({
 }) => (
   <ul>
     {counters.map(counter =>
-      <Counter
-        key={counter.id}
-        value={counter.value}
-        onIncrement={() => onIncrement(counter.id)}
-        onDecrement={() => onDecrement(counter.id)}
-      />
+      <Box key={counter.id} sx={{ '& > :not(style)': { m: 3 } }}>
+        <Counter
+          key={counter.id}
+          value={counter.value}
+          onIncrement={() => onIncrement(counter.id)}
+          onDecrement={() => onDecrement(counter.id)}
+        />
+      </Box>
     )}
   </ul>
 );
