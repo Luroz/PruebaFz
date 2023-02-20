@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import ContentContainer from '../components/ContentContainer';
 import useAxios from 'axios-hooks'
 import CircularProgress from '@mui/material/CircularProgress';
+import { isBrowser } from 'react-device-detect';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -43,7 +44,7 @@ const ContentView = () => {
         navigation
 
         slidesPerView={1}
-        style={{ height: '79vh', "--swiper-navigation-color": "#eb0f37", "--swiper-pagination-color": "#eb0f37" }}
+        style={{ height: `${isBrowser ? 'calc(100vh - 217px)' : 'calc(50vh - 66px)'}`, "--swiper-navigation-color": "#eb0f37", "--swiper-pagination-color": "#eb0f37" }}
         rewind
       >
         {items.map((item) => (

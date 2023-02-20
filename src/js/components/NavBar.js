@@ -38,15 +38,18 @@ const Navbar = () => {
 
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' >
-                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contenidos'}>Contenidos</NavLink>
-              </MDBNavbarLink>
+            <MDBNavbarItem style={{
+              display: 'flex',
+              alignItems: 'center',
+              padding: '2em'
+            }}>
+              <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contenidos'}>Contenidos</NavLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink >
-                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contadores'}>Contadores</NavLink>
-              </MDBNavbarLink>
+            <MDBNavbarItem style={{
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contadores'}>Contadores</NavLink>
             </MDBNavbarItem>
 
           </MDBNavbarNav>
