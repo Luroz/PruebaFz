@@ -6,11 +6,14 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './js/styles/styles'
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import { CounterView } from './js/views/CounterView';
+import ContentView from './js/views/ContentView';
+import Layout from './js/views/Layout';
 import { counters } from './js/reducers/index';
 
 import "./index.sass"
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -19,8 +22,12 @@ const store = createStore(counters);
 const Main = () => (
   <>
     <Routes>
-      <Route path="/" element={<CounterView />}>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<ContentView />} />
+        <Route path="/contenidos" element={<ContentView />} />
+        <Route path="/contadores" element={<CounterView />} />
       </Route>
+
 
     </Routes>
 

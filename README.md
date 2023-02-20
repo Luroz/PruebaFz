@@ -1,6 +1,7 @@
 
 ## To run this app it is necesary to fun the following commands in order:
 
+Install Cors unblock to accept Cross origin calls  at https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=en
 `npm install`
 `npm start`
 

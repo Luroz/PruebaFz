@@ -40,12 +40,12 @@ const Navbar = () => {
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' >
-                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contents'}>Contents</NavLink>
+                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contenidos'}>Contenidos</NavLink>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink >
-                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/counters'}>Counters</NavLink>
+                <NavLink style={{ textDecoration: 'none', color: 'black' }} to={'/contadores'}>Contadores</NavLink>
               </MDBNavbarLink>
             </MDBNavbarItem>
 
