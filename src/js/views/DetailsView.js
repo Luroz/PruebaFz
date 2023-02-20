@@ -11,7 +11,7 @@ const DetailsView = () => {
   const { id } = useParams();
 
   const [{ data, loading, error }] = useAxios(
-    `https://mychannel.nunchee.tv/api/ott/contents/details/${id}`
+    `http://localhost:3000/ott/contents/details/${id}`
   )
 
   if (loading) {

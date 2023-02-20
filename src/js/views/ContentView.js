@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 
 const ContentView = () => {
   const [{ data, loading, error }] = useAxios(
-    'https://mychannel.nunchee.tv/api/generic/playlists/details/62ed078f15f4850026b193bd?itemsPerPage=10'
+    'http://localhost:3000/generic/playlists/details/62ed078f15f4850026b193bd?itemsPerPage=10'
   )
 
   if (loading) {

@@ -39,7 +39,7 @@ const ContentContainer = ({ content }) => {
           </Typography>
         </Box>
         <Button autoCapitalize='false'>
-          <Link style={{ textDecoration: 'none', color: '#eb0f37' }} to={`${content._id}`}>
+          <Link style={{ textDecoration: 'none', color: '#eb0f37' }} to={`contenidos/${content._id}`}>
             Ver mas...
           </Link>
         </Button>
