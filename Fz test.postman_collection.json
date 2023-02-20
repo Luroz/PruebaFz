@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "70731a17-f77e-4e15-9bc2-6225cfa52385",
+		"name": "Fz test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8635305"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mychannel.nunchee.tv/api/generic/playlists/details/62ed078f15f4850026b193bd?itemsPerPage=10",
+					"protocol": "https",
+					"host": [
+						"mychannel",
+						"nunchee",
+						"tv"
+					],
+					"path": [
+						"api",
+						"generic",
+						"playlists",
+						"details",
+						"62ed078f15f4850026b193bd"
+					],
+					"query": [
+						{
+							"key": "itemsPerPage",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "images",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
